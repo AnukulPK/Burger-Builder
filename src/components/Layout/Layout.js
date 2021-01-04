@@ -1,9 +1,10 @@
 import './Layout.css';
+import Toolbar from "../Navigation/Toolbar/Toolbar";
 
 const Layout = (props)=>{
     return(
     <>
-    <div>Toolbar, Sidebar, Backdrop</div>
+    <Toolbar/>
     <main className="content">
         {props.children}
     </main>
