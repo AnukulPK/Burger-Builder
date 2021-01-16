@@ -20,6 +20,11 @@
   transform: translateX(-100%);
 }
 
+.logo-1 {
+  height: 11%;
+  margin-bottom: 32px;
+}
+
 @media (min-width: 500px) {
   .SideDrawer {
     display: none;
