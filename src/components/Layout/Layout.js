@@ -10,9 +10,13 @@ const Layout = (props)=>{
         setShowSideDrawer(false);
     }
 
+    const sideDrawerToggleHandler = () =>{
+        setShowSideDrawer(!showSideDrawer);
+    }
+
     return(
     <>
-    <Toolbar/>
+    <Toolbar drawerToggleClicked={sideDrawerToggleHandler}/>
     <SideDrawer open={showSideDrawer} closed={sideDrawerClosed}/>
     <main className="content">
         {props.children}
